@@ -5,13 +5,11 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:server": "npm run dev -w @workspace/api"
+    "dev:server": "npm run dev -w @workspace/api",
+    "compile:domains": "npm run compile -w @workspace/domains",
+    "compile:infra": "npm run compile -w @workspace/infrastructure"
   },
   "author": "",
   "license": "ISC",
-  "workspaces": [
-    "packages/api",
-    "packages/orm",
-    "packages/query"
-  ]
+  "workspaces": [ "packages/*" ]
 }

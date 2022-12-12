@@ -1,0 +1,13 @@
+{
+  "name": "@workspace/domains",
+  "version": "1.0.0",
+  "description": "domain module",
+  "scripts": {
+    "compile": "rm -rf lib & tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typeorm": "^0.3.11"
+  }
+}

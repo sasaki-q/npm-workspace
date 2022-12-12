@@ -1,0 +1,17 @@
+{
+  "name": "@workspace/infrastructure",
+  "version": "1.0.0",
+  "description": "infrastructure module",
+  "scripts": {
+    "compile": "rm -rf lib & tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@workspace/api": "^1.0.0",
+    "@workspace/domains": "^1.0.0"
+  },
+  "dependencies": {
+    "typeorm": "^0.3.11"
+  }
+}

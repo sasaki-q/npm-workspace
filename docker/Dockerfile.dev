@@ -8,6 +8,8 @@ RUN apk update && \
 
 COPY *.json .
 COPY ./packages/api/*.json ./packages/api/
+COPY ./packages/domains/ ./packages/domains
+COPY ./packages/infrastructure/ ./packages/infrastructure
 RUN npm ci
 
 ENV PORT=3001

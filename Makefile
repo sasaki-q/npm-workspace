@@ -5,4 +5,4 @@ build-api:
 	docker compose build workspace-worker
 
 up-api:
-	docker compose up workspace-worker --remove-orphans
+	docker compose up
