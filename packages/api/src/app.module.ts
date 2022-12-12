@@ -3,19 +3,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from '@/app.controller';
 import { TypeOrmConfigService } from '@/config/orm';
-import { ItemModule } from './item';
-import { DatabaseService } from './database/database.service';
-import { DatabaseModule } from './database/database.module';
-
-type DatabaseConfig = {
-  DB_PORT: number;
-  DB_HOST: string;
-  DB_USER: string;
-  DB_NAME: string;
-  DB_PASS: string;
-}
-
-export let ormtmp;
+import { ItemModule } from '@/item';
+import { DatabaseModule } from '@/database';
 @Module({
   imports: [
     ConfigModule.forRoot({
