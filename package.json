@@ -1,0 +1,17 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "npm run dev -w @workspace/api"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/api",
+    "packages/orm",
+    "packages/query"
+  ]
+}
