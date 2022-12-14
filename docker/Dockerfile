@@ -1,4 +1,4 @@
-FROM --platform=arm64 node:16-alpine3.15 AS builder
+FROM --platform=linux/x86_64 node:16-alpine3.15 AS builder
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY ./packages/infrastructure ./packages/infrastructure
 RUN npm ci && \
     npm run compile:domains && \
     npm run compile:infra && \
-    npm run build && \
+    npm run build:server && \
     npm cache clean --force
 
 FROM --platform=linux/x86_64 node:16-alpine3.15 AS production
