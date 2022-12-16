@@ -1,0 +1,16 @@
+{
+  "name": "@workspace/batch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run:migration": "npm run generate && npm run migrate",
+    "generate": "npx typeorm-ts-node-esm migration:generate ./src/migrations/migration -d ./src/datasource.config.ts",
+    "migrate": "npx typeorm-ts-node-esm migration:run -d ./src/datasource.config.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@workspace/domains": "^1.0.0"
+  }
+}

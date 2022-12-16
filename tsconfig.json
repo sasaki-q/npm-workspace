@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "lib": ["es2020"],
+        "target": "es2020",
+        "module": "commonjs",
+        "baseUrl": "./",
+        "moduleResolution": "node",
+        "strict": true,
+        "composite": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "strictPropertyInitialization": false
+    },
+    "compileOnSave": false
+}  
