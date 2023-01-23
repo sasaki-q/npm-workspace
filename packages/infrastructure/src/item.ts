@@ -7,9 +7,11 @@ export abstract class ItemQuery {
 
 export class ItemQueryImpl implements ItemQuery {
     private readonly _itemRepository: Repository<Item>
+
     constructor() {
         this._itemRepository = getRepository(Item);
     }
+
     async getItemList(): Promise<Item[]> {
         return await this._itemRepository.find();
     }

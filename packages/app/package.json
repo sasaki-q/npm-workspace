@@ -13,11 +13,20 @@
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
+    "@workspace/domains": "^1.0.0",
+    "@workspace/infrastructure": "^1.0.0",
+    "amazon-cognito-identity-js-typescript": "^1.22.0",
+    "axios": "^1.2.2",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "typeorm": "^0.3.11",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.6",
+    "amazon-cognito-identity-js": "^6.1.2"
   }
 }

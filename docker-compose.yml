@@ -18,6 +18,7 @@ services:
       - ./packages/domains/dist:/app/packages/domains/dist
       - ./packages/infrastructure/dist:/app/packages/infrastructure/dist
     command: npm run dev:server
+    
   workspace-app-worker:
     working_dir: /app
     container_name: workspace-app-worker
@@ -31,8 +32,8 @@ services:
       - workspace-database
     volumes:
       - ./packages/app:/app/packages/app
-      # - ./packages/domains/dist:/app/packages/domains/dist
-      # - ./packages/infrastructure/dist:/app/packages/infrastructure/dist
+      - ./packages/domains/dist:/app/packages/domains/dist
+      - ./packages/infrastructure/dist:/app/packages/infrastructure/dist
     command: npm run dev:app
 
   migration-container:
